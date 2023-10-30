@@ -22,11 +22,11 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           rm -rf .git
-          git remote add origin https://github.com/seqyuan/anno_papaer.git
+          git remote add mirror https://github.com/seqyuan/anno_papaer.git
           git branch -r
 
           git config --global user.name 'seqyuan' 
           git config --global user.email 'ahworld07@gmail.com'
           git add -A
           git commit -m "qwer"
-          git push -f origin main
+          git push -f mirror main
