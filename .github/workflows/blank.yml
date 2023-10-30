@@ -21,7 +21,6 @@ jobs:
           echo "$ACTION_DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa # 配置秘钥
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-          rm -rf .git
           git remote add mirror https://github.com/seqyuan/anno_papaer.git
           git branch -r
 
