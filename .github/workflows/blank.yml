@@ -16,7 +16,8 @@ jobs:
           git clone https://github.com/seqyuan/sphinxbook.git
           cp -r sphinxbook/docs/* ./docs/
           rm -rf sphinxbook
-          export GIT_SSH_COMMAND="ssh -v -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no -l ahworld07@gmail.com"
+          export GIT_SSH_COMMAND="ssh -v -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no -l $INPUT_SSH_USERNAME"
+          echo $INPUT_SSH_USERNAME
           mkdir -p ~/.ssh/
           echo "$ACTION_DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa # 配置秘钥
           chmod 600 ~/.ssh/id_rsa
