@@ -24,6 +24,9 @@ jobs:
           deploy_key: ${{ secrets.DORDEP }}
           publish_dir: ./docs
 
+      - name: switch branch
+        run: git checkout gh-pages
+
       - name: 'Mirror to github'
         uses: pixta-dev/repository-mirroring-action@v1
         with:
