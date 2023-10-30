@@ -9,28 +9,20 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@v1
 
-      - name: 'Mirror to github'
-        env:
-          ACTION_DEPLOY_KEY: ${{ secrets.GIT_SYN_KEY }}
+      - name: 'Config'
         run: |
           git clone https://github.com/seqyuan/sphinxbook.git
           cp -r sphinxbook/docs/* ./docs/
           rm -rf sphinxbook
-          export GIT_SSH_COMMAND="ssh -v -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no -l $INPUT_SSH_USERNAME"
-          echo $INPUT_SSH_USERNAME
-          mkdir -p ~/.ssh/
-          echo "$ACTION_DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa # 配置秘钥
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-          
-          #git branch -r
-          ls -l docs/*
-          cat .git/config
-          #git config --global user.name 'seqyuan' 
-          #git config --global user.email 'ahworld07@gmail.com'
-          #git add -A
-          #git commit -m "qwer"
-          git remote add mirror https://github.com/seqyuan/anno_papaer.git
-          #git push --tags --force mirror "refs/remotes/mirror/*:refs/heads/*"
-          git push --tags --force --prune mirror 
-          #"refs/remotes/origin/*:refs/heads/*"
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GIT_SYN_KEY }}
+          publish_dir: ./docs
+      - name: 'Mirror to github'
+        uses: pixta-dev/repository-mirroring-action@v1
+        with:
+          target_repo_url:
+            git@github.com:seqyuan/anno_papaer.git
+          ssh_private_key:
+            ${{ secrets.GIT_SYN_KEY }}
