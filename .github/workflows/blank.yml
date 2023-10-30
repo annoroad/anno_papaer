@@ -8,10 +8,22 @@ jobs:
     steps:
       - name: 'Checkout'
         uses: actions/checkout@v1
+
       - name: 'Mirror to github'
-        uses: seqyuan/pages-action@v1
-        with:
-          target_repo_url:
-            git@github.com:seqyuan/anno_papaer.git
-          ssh_private_key:
-            ${{ secrets.GIT_SYN_KEY }}
+        env:
+          ACTION_DEPLOY_KEY: ${{ secrets.GIT_SYN_KEY }}
+        run: |
+          git clone https://github.com/seqyuan/sphinxbook.git
+          cp -r sphinxbook/docs/* ./docs/
+          rm -rf sphinxbook
+          export GIT_SSH_COMMAND="ssh -v -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no -l seqyuan"
+          mkdir -p ~/.ssh/
+          echo "$ACTION_DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa # 配置秘钥
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git remote add mirror git@github.com:seqyuan/anno_papaer.git
+          git config --global user.name 'seqyuan' 
+          git config --global user.email 'ahworld07@gmail.com'
+          git add -A
+          git commit -m "qwer"
+          git push -f origin main
