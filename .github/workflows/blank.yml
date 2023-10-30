@@ -16,17 +16,18 @@ jobs:
           git clone https://github.com/seqyuan/sphinxbook.git
           cp -r sphinxbook/docs/* ./docs/
           rm -rf sphinxbook
-          export GIT_SSH_COMMAND="ssh -v -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no -l seqyuan"
+          export GIT_SSH_COMMAND="ssh -v -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no -l ahworld07@gmail.com"
           mkdir -p ~/.ssh/
           echo "$ACTION_DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa # 配置秘钥
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git remote add mirror https://github.com/seqyuan/anno_papaer.git
-          git branch -r
+          
+          #git branch -r
           ls -l
           cat .git/config
-          git config --global user.name 'seqyuan' 
-          git config --global user.email 'ahworld07@gmail.com'
+          #git config --global user.name 'seqyuan' 
+          #git config --global user.email 'ahworld07@gmail.com'
           git add -A
           git commit -m "qwer"
+          git remote add mirror https://github.com/seqyuan/anno_papaer.git
           git push --tags --force mirror "refs/remotes/mirror/*:refs/heads/*"
