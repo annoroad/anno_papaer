@@ -23,7 +23,7 @@ jobs:
         id: push_directory
         uses: cpina/github-action-push-to-another-repository@target-branch
         env:
-          API_TOKEN_GITHUB: ${{ secrets.DORDEP }}
+          SSH_DEPLOY_KEY: ${{ secrets.GIT_SYN_KEY }}
         with:
           source-directory: ./
           destination-github-username: 'seqyuan'
