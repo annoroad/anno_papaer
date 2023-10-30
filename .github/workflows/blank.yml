@@ -1,6 +1,8 @@
 name: 'GitHub Syn'
 
-on: [push]
+on:
+  push:
+    branches: [ main ]
 
 jobs:
   mirror_to_github:
@@ -17,20 +19,17 @@ jobs:
           cp -r sphinxbook/docs/* ./docs/
           rm -rf sphinxbook
 
-      - name: 'Deploy'
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          publish_branch: gh-pages
-          deploy_key: ${{ secrets.DORDEP }}
-          publish_dir: ./docs
+      # - name: 'Deploy'
+        # uses: peaceiris/actions-gh-pages@v3
+        # with:
+          # publish_branch: gh-pages
+          # deploy_key: ${{ secrets.DORDEP }}
+          # publish_dir: ./docs
 
-      - name: switch branch
-        run: git checkout gh-pages
-
-      - name: 'Mirror to github'
-        uses: pixta-dev/repository-mirroring-action@v1
-        with:
-          target_repo_url:
-            git@github.com:seqyuan/anno_papaer.git
-          ssh_private_key:
-            ${{ secrets.GIT_SYN_KEY }}
+      #- name: 'Mirror to github'
+      #  uses: pixta-dev/repository-mirroring-action@v1
+      #  with:
+      #    target_repo_url:
+      #      git@github.com:seqyuan/anno_papaer.git
+      #    ssh_private_key:
+      #      ${{ secrets.GIT_SYN_KEY }}

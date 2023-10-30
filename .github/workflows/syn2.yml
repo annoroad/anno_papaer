@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: 'Config'
+        run: |
+          git clone https://github.com/seqyuan/sphinxbook.git
+          cp -r sphinxbook/docs/* ./docs/
+          rm -rf sphinxbook
+
+      - name: Pushes to another repository
+        id: push_directory
+        uses: cpina/github-action-push-to-another-repository@target-branch
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.DORDEP }}
+        with:
+          source-directory: ./
+          destination-github-username: 'seqyuan'
+          destination-repository-name: 'anno_papaer'
+          user-email: carles3@pina.cat
+          target-branch: main
+          create-target-branch-if-needed: true
+  
