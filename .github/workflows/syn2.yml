@@ -29,6 +29,6 @@ jobs:
           destination-github-username: 'seqyuan'
           destination-repository-name: 'anno_papaer'
           user-email: carles3@pina.cat
-          target-branch: main
+          target-branch: test
           create-target-branch-if-needed: true
   
