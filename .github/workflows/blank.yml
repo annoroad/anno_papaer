@@ -28,4 +28,4 @@ jobs:
           git config --global user.email 'ahworld07@gmail.com'
           git add -A
           git commit -m "qwer"
-          git push -f mirror main
+          git push -f origin main
