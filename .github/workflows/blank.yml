@@ -17,7 +17,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GIT_SYN_KEY }}
+          github_token: ${{ secrets.DORDEP }}
           publish_dir: ./docs
       - name: 'Mirror to github'
         uses: pixta-dev/repository-mirroring-action@v1
