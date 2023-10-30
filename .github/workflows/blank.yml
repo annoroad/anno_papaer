@@ -21,7 +21,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           publish_branch: gh-pages
-          github_token: ${{ secrets.DORDEP }}
+          deploy_key: ${{ secrets.DORDEP }}
           publish_dir: ./docs
 
       - name: 'Mirror to github'
