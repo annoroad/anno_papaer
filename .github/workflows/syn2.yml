@@ -21,7 +21,7 @@ jobs:
 
       - name: Pushes to another repository
         id: push_directory
-        uses: cpina/github-action-push-to-another-repository@target-branch
+        uses: cpina/github-action-push-to-another-repository@main
         env:
           SSH_DEPLOY_KEY: ${{ secrets.GIT_SYN_KEY }}
         with:
@@ -29,7 +29,7 @@ jobs:
           destination-github-username: 'seqyuan'
           destination-repository-name: 'anno_papaer'
           user-email: carles3@pina.cat
-          target-branch: test
+          target-branch: main
           create-target-branch-if-needed: true
           GIT_PUSH_ARGS: --tags --force --prune
   
