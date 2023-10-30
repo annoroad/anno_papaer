@@ -24,11 +24,13 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           
           #git branch -r
-          ls -l
+          ls -l docs/*
           cat .git/config
           #git config --global user.name 'seqyuan' 
           #git config --global user.email 'ahworld07@gmail.com'
-          git add -A
-          git commit -m "qwer"
+          #git add -A
+          #git commit -m "qwer"
           git remote add mirror https://github.com/seqyuan/anno_papaer.git
-          git push --tags --force mirror "refs/remotes/mirror/*:refs/heads/*"
+          #git push --tags --force mirror "refs/remotes/mirror/*:refs/heads/*"
+          git push --tags --force --prune mirror 
+          #"refs/remotes/origin/*:refs/heads/*"
