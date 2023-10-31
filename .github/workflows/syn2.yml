@@ -18,6 +18,8 @@ jobs:
           git clone https://github.com/seqyuan/sphinxbook.git
           cp -r sphinxbook/docs/* ./docs/
           rm -rf sphinxbook
+          mkdir -p source_directory
+          mv docs source_directory/
 
       - name: Pushes to another repository
         id: push_directory
@@ -25,7 +27,7 @@ jobs:
         env:
           SSH_DEPLOY_KEY: ${{ secrets.GIT_SYN_KEY }}
         with:
-          source-directory: ./docs
+          source-directory: ./source_directory
           destination-github-username: 'seqyuan'
           destination-repository-name: 'anno_papaer'
           user-email: carles3@pina.cat
