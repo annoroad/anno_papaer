@@ -51,6 +51,7 @@
 home <self>
 summary
 denovo/index
+med/index
 3D/index
 scst/index
 ```
