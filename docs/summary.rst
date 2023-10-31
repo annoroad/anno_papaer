@@ -1,15 +1,8 @@
 #############
-写在前面的话
+重点文章汇总
 #############
 
-xxxxxx xx
-xxxx
-
-**AAA**
-
-
-.. code-block:: bash
-
-    pip install scanpy
-
-**Development version**
+.. csv-table:: 重点文章汇总
+   :file: all_papers.csv
+   :header-rows: 0
+   :delim: tab
