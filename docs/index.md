@@ -15,7 +15,15 @@
     :link: denovo/index
     :link-type: doc
 
-    基因组组装合作文章摘录，T2T，单体型，泛基因组，动植物重测序
+    基因组组装合作文章摘录，T2T，单体型，泛基因组，动植物重测序.
+```
+
+```{eval-rst}
+.. card:: 医学 :octicon:`play;1em;`
+    :link: med/index
+    :link-type: doc
+
+    医学DNA、医学多组学等合作文章摘录.
 ```
 
 ```{eval-rst}
@@ -23,7 +31,7 @@
     :link: 3D/index
     :link-type: doc
 
-    三维基因组互作合作文章摘录，肿瘤，植物，多组学调控，三代和三维基因组多组学联合
+    三维基因组互作合作文章摘录，肿瘤，植物，多组学调控，三代和三维基因组多组学联合.
 ```
 
 ```{eval-rst}
@@ -31,8 +39,9 @@
     :link: scst/index
     :link-type: doc
 
-    单细胞转录组、scATAC与空间转录组合作文章摘录，医学，肿瘤，植物
+    单细胞转录组、scATAC与空间转录组合作文章摘录，医学，肿瘤，植物.
 ```
+
 
 ```{toctree}
 :hidden: true
