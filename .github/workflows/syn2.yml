@@ -18,9 +18,10 @@ jobs:
           git clone https://github.com/seqyuan/sphinxbook.git
           cp -r sphinxbook/docs/* ./docs/
           cp sphinxbook/docs/.readthedocs.yaml ./docs/
-          rm -rf sphinxbook
+          cp sphinxbook/requirements.txt ./docs/
           mkdir -p source_directory
           cp -r docs source_directory/
+          rm -rf sphinxbook
 
       - name: Pushes to another repository
         id: push_directory
