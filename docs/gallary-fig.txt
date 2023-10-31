@@ -1,1 +1,5 @@
-singlecell/CNV/inferCNVpy	gallary-figs/WX20231026-140421.png
+3D/advs.202200818	gallary-figs/advs.202200818.png
+3D/j.jare.2023.04.015	gallary-figs/j.jare.2023.04.015.png
+3D/jxb_erac517	gallary-figs/jxb_erac517.png
+scst/ovarian-sc	gallary-figs/ovarian-sc.png
+scst/scATACrice	gallary-figs/scATACrice.png

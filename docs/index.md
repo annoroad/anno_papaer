@@ -1,28 +1,37 @@
-# Welcome to Annogene bioinformatics documentation
+# 大项目合作文章
 
-
-
-```{attention}
-*产品分析知识手册* 更新规则
-1. 把文档做成jupyter notebook格式(.ipynb结尾)
-2. 把.ipynb发邮件给xxx@genome.cn
-```
 
 
 ```{eval-rst}
-.. card:: Installation :octicon:`plug;1em;`
-    :link: about
+.. card:: 概览 :octicon:`plug;1em;`
+    :link: summary
     :link-type: doc
 
-    Click here to view a brief *pmanu* installation guide.
+    查看近年大项目合作文章汇总.
 ```
 
 ```{eval-rst}
-.. card:: Tutorials :octicon:`play;1em;`
-    :link: singlecell/index
+.. card:: 基因组组装 :octicon:`play;1em;`
+    :link: denovo/index
     :link-type: doc
 
-    End-to-end tutorials showcasing key features in the package.
+    基因组组装合作文章摘录，T2T，单体型，泛基因组，动植物重测序
+```
+
+```{eval-rst}
+.. card:: 三维基因组 :octicon:`play;1em;`
+    :link: 3D/index
+    :link-type: doc
+
+    三维基因组互作合作文章摘录，肿瘤，植物，多组学调控，三代和三维基因组多组学联合
+```
+
+```{eval-rst}
+.. card:: 单细胞与空间组学 :octicon:`play;1em;`
+    :link: scst/index
+    :link-type: doc
+
+    单细胞转录组、scATAC与空间转录组合作文章摘录，医学，肿瘤，植物
 ```
 
 ```{toctree}
@@ -30,9 +39,11 @@
 :maxdepth: 3
 :titlesonly: true
 
-Documentation home <self>
-about
-singlecell/index
+home <self>
+summary
+denovo/index
+3D/index
+scst/index
 ```
 
 ```{toctree}
