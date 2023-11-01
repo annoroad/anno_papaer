@@ -8,4 +8,5 @@
 
    ./ovarian-sc
    ./scATACrice
+   ./SFTS-sc
 ```
