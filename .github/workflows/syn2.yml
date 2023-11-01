@@ -17,7 +17,7 @@ jobs:
         run: |
           git clone https://github.com/seqyuan/sphinxbook.git
           cp -r sphinxbook/docs/* ./docs/
-          cp sphinxbook/docs/.readthedocs.yaml ./docs/
+          cp sphinxbook/docs/.readthedocs.yaml ./
           cp sphinxbook/requirements.txt ./docs/
           mkdir -p source_directory
           cp -r docs source_directory/
