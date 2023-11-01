@@ -1,5 +1,5 @@
-3D/advs.202200818	../gallary-figs/advs.202200818.png
-3D/j.jare.2023.04.015	../gallary-figs/j.jare.2023.04.015.png
-3D/jxb_erac517	../gallary-figs/jxb_erac517.png
-scst/ovarian-sc	../gallary-figs/ovarian-sc.png
-scst/scATACrice	../gallary-figs/scATACrice.png
+3D/advs.202200818	_static/gallary-figs/advs.202200818.png
+3D/j.jare.2023.04.015	_static/gallary-figs/j.jare.2023.04.015.png
+3D/jxb_erac517	_static/gallary-figs/jxb_erac517.png
+scst/ovarian-sc	_static/gallary-figs/ovarian-sc.png
+scst/scATACrice	_static/gallary-figs/scATACrice.png
