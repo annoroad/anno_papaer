@@ -9,4 +9,6 @@
    ./ovarian-sc
    ./scATACrice
    ./SFTS-sc
+   ./CiMEC-sc
+   ./CPCs-sc
 ```
