@@ -10,4 +10,6 @@
    ./jxb_erac517
    ./advs.202200818
    ./HiCpancreatic
+   ./HiCmouse
+   ./HiCGBM
 ```
