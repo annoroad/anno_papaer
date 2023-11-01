@@ -3,3 +3,4 @@
 3D/jxb_erac517	_static/gallary-figs/jxb_erac517.png
 scst/ovarian-sc	_static/gallary-figs/ovarian-sc.png
 scst/scATACrice	_static/gallary-figs/scATACrice.png
+scst/SFTS-sc	_static/gallary-figs/SFTS-sc.png
