@@ -10,3 +10,4 @@ scst/CPCs-sc	_static/gallary-figs/CPCs-sc.png
 3D/HiCmouse	_static/gallary-figs/HiCmouse.png
 3D/HiCGBM	_static/gallary-figs/HiCGBM.png
 3D/riceHi-C	_static/gallary-figs/riceHi-C.png
+scst/mouseWnt	_static/gallary-figs/mouseWnt.png
