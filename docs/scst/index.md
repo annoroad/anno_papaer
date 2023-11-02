@@ -6,7 +6,7 @@
 ```{eval-rst}
 .. nbgallery::
 
-    ./mouseWnt
+   ./mouseWnt
    ./ovarian-sc
    ./scATACrice
    ./SFTS-sc
