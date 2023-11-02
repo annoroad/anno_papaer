@@ -9,3 +9,4 @@ scst/CPCs-sc	_static/gallary-figs/CPCs-sc.png
 3D/HiCpancreatic	_static/gallary-figs/HiCpancreatic.png
 3D/HiCmouse	_static/gallary-figs/HiCmouse.png
 3D/HiCGBM	_static/gallary-figs/HiCGBM.png
+3D/riceHi-C	_static/gallary-figs/riceHi-C.png

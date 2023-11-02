@@ -12,4 +12,5 @@
    ./HiCpancreatic
    ./HiCmouse
    ./HiCGBM
+   ./riceHi-C
 ```

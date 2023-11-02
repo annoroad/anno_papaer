@@ -31,7 +31,7 @@ jobs:
         with:
           source-directory: ./source_directory
           destination-github-username: 'seqyuan'
-          destination-repository-name: 'anno_papaer'
+          destination-repository-name: 'anno_paper'
           user-email: carles3@pina.cat
           target-branch: main
           create-target-branch-if-needed: true
