@@ -8,6 +8,7 @@
 
    ./mouseWnt
    ./ovarian-sc
+   ./IPF
    ./scATACrice
    ./SFTS-sc
    ./CiMEC-sc
