@@ -1,7 +1,7 @@
 # 大项目组写作更新
 ### 网址
-1. http://anno-papaer.rtfd.io
-2. https://anno-papaer.readthedocs.io/
+1. http://anno-paper.rtfd.io
+2. https://anno-paper.readthedocs.io/
 
 ## 协作更新方式
 一篇文章一个jupyter notebook文件，另外加一个文章封面截图
@@ -12,13 +12,14 @@
 4. 准备好一张png格式的截图作为这篇notebook文档的封面，png的命名最好和notebook的命名一致
 5. notebook拷贝到对应的文件夹，例如`scATACrice.ipynb`要拷贝到scst文件夹
 6. 文档封面`scATACrice.png`要拷贝到gallary-figs目录
-7. 执行`git pull `命令，这一步是在推送前和远端仓库保持一致
+7. 执行`git pull`命令，这一步是在推送前和远端仓库保持一致
 8. 编辑对应类别的index.md，例如`scATACrice.ipynb`要编辑`scst/index.md`，把`scATACrice`加入文章索引
 9. 编辑`gallary-fig.txt`，这是一个`tab`分隔的文件，记录的是封面图片和文档的对应关系
 10. `git add -A`
 11. `git commit -m "scATACrice"`
 12. `git push`
 
+> 每次添加新的**文档**从第5步骤开始即可。修改各分目录index.md、gallary-fig.txt以及all_papers.csv之前一定先执行`git pull`
 
 ## 更新注意事项
 #### 1. 文档格式为`.ipynb`结尾的jupyter notebook格式
