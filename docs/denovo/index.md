@@ -5,6 +5,11 @@
 
 ```{eval-rst}
 .. nbgallery::
-
+    ./DenovoTianqiao
+    ./DenovoMianhua
+    ./DenovoJinqiao
+    ./DenovoYousong
+    ./DenovoPichong
+    ./DenovoDenglong
    
 ```

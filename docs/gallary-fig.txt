@@ -12,3 +12,10 @@ scst/CPCs-sc	_static/gallary-figs/CPCs-sc.png
 3D/riceHi-C	_static/gallary-figs/riceHi-C.png
 scst/mouseWnt	_static/gallary-figs/mouseWnt.png
 scst/IPF	_static/gallary-figs/IPF.png
+denovo/DenovoDenglong	_static/gallary-figs/DenovoDenglong.png
+denovo/DenovoJinqiao	_static/gallary-figs/DenovoJinqiao.png
+denovo/DenovoMianhua	_static/gallary-figs/DenovoMianhua.png
+denovo/DenovoPichong	_static/gallary-figs/DenovoPichong.png
+denovo/DenovoTianqiao	_static/gallary-figs/DenovoTianqiao.png
+denovo/DenovoYousong	_static/gallary-figs/DenovoYousong.png
+
